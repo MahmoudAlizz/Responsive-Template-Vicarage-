@@ -1,0 +1,469 @@
+/* general */
+:root{
+    --color1:#18397c;
+    --color2:#d19f48;
+    --orange1:#ff9108;
+    --color3:#212121;
+    --black:#000000;
+    --color4:#e2e2e2;
+    --color5:#e8e8e8;
+    --color6:#007bff;
+    --color7:#636c72;
+}
+
+.font-size-1{
+    font-size: 1rem;
+}
+
+.font-size-2{
+    font-size:1.3rem;
+}
+
+.letter-spacing-1{
+    letter-spacing: .25rem;
+}
+
+.letter-spacing-2{
+    letter-spacing: 1rem;
+}
+
+.letter-spacing-3{
+    letter-spacing: 1.3rem;
+}
+
+.bg-orange1{
+    background:var(--orange1);
+}
+
+.border-orange1{
+    border:1px solid var(--orange1);
+}
+.text-orange1{
+    color:var(--orange1);
+}
+
+.rounded-5{
+    border-radius: 5rem;
+}
+
+.bg-color1{
+    background-color: var(--color1);
+}
+
+/* animation */
+@keyframes down-to-top {
+    from { height:0;}
+    to { height:38%;visibility: visible;}
+}
+
+/* --------------------------------------------------- */
+/* header */
+.header{
+    height:100vh;
+    width:100%;
+    background-image: url(../images/bg4.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.header1{
+    height:30vh;
+}
+
+.header nav .container {
+    position:relative;
+}
+
+div.navbar-brand{
+    font-size: 1.8rem;
+}
+
+.header li.nav-item button:hover{
+    background:var(--white);
+    color:var(--dark) !important;
+    border:1px solid var(--orange1);
+}
+
+.navbar ul li:not(.active):hover  a {
+    border:1px solid var(--white);
+   font-size:1.1rem;
+   transition: font-size .3s;
+}
+
+div.jumbotron a:hover{
+    transition: 1s all;
+    background:var(--info);
+}
+
+div#login div.modal-content{
+    border :10px solid var(--color4);
+}
+
+div#login div.modal-content input{
+    background:var(--color4);
+    border-bottom: 1px solid var(--orange1);
+}
+
+div#login div.modal-content a{
+    text-decoration: none;
+}
+
+div#login div.modal-content p{
+    font-size:14px;;
+}
+
+/* --------------------------------------------------- */
+/* Main */
+
+/* Our Properties */
+.our-properties{
+    margin-top:100px;
+}
+
+.our-properties button:hover{
+   background:var(--white);
+   border:1px solid var(--orange1);
+   color:var(--orange1) !important;
+   transition: .6s all;
+}
+
+/* --------------------------------------------------- */
+/* custome-reviews */
+.custome-reviews ol.carousel-indicators {
+    left:22%;
+    justify-content: left;
+} 
+.custome-reviews ol.carousel-indicators li{
+    border-radius: 50%;
+    height:.7rem;
+    width:.7rem;
+}
+
+.custome-reviews ol.carousel-indicators li.active{
+    background: var(--orange1);
+}
+
+.custome-reviews ol.carousel-indicators li:not(.active) {
+    background:#6c757d;
+}
+
+/* --------------------------------------------------- */
+/* newsletter */
+.newsletter {
+    background:var(--color2);
+}
+.newsletter form i{
+    margin-right:-2px;
+    z-index:3;
+}
+
+.newsletter form input[type="text"]{
+    width:400px;
+}
+
+/* --------------------------------------------------- */
+/* footer */
+footer{
+    background-color: var(--color3);
+}
+
+footer div.row div:first-child p{
+    font-size:14px;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+footer .row .p2 ul li:hover a {
+    padding-left:5px;
+    font-weight: bold;
+    transition: .5s all;
+}
+
+footer .copyright {
+    background:var(--black);
+    height:5rem;
+    line-height: 5rem;
+}
+/* --------------------------------------------------- */
+/* page contact */
+ section.contact-us .container div form input , section.contact-us .container div form textarea{
+    border-bottom:1px solid var(--orange1);
+}
+
+section.contact-us .container div div:last-child{
+    border: 1px solid var(--color4);
+}
+
+/* --------------------------------------------------- */
+/* page services */
+ .our-services span{
+    font-size:2.5rem;
+}
+.our-services .row{
+    position: relative;
+}
+
+
+section.our-services div.p2,
+section.our-services div.p5{
+    border-left:1px solid var(--color5);
+    border-right:1px solid var(--color5);
+} 
+/* --------------------------------------------------- */
+/* page about */
+section.about-us p{
+    line-height: 38px;
+}
+
+.our-agents .overlayer {
+    position: absolute;
+    width:89%;
+    left:5.7%;
+    border-top:3px solid var(--orange1);
+    padding-top:1rem;
+    background-color: var(--black);
+    bottom: 0%;
+    height:0%;
+    opacity: 0;
+    transition:.4s all;
+}
+
+.our-agents .row div:hover .overlayer {
+    bottom:0;
+    opacity: 1;
+    height:38%;
+
+}
+
+.overlayer span{
+    color: var(--color7);
+    font-size: 18px;
+    transition: color .3s;
+}
+
+.overlayer span:hover{
+    color: var(--color6);
+}
+
+
+
+
+/* --------------------------------------------------- */
+/* Media */
+
+/* Xl */
+@media screen and (min-width:1200px)  {
+    /* Customer reviews */
+    .custome-reviews ol.carousel-indicators {
+        bottom: -25px;
+    }    
+
+    section.our-services .row::before {
+        content: "";
+        position: absolute;
+        left:10%;
+        top:50%;
+        background:var(--color5);
+        height:1px;
+        width:80%;
+        transform: translateY(-25px);
+    }
+}
+
+/* LG */
+@media screen and (max-width:1199px)  {
+    /* customer reviews */
+    .custome-reviews ol.carousel-indicators {
+        bottom: -35px;
+    }  
+        /* page about */
+        .our-agents .overlayer{
+            width:89%;
+            left:5.7%;
+            padding-top:1rem;
+        }  
+        .our-agents .overlayer h4{
+            font-size: 1rem;
+        } 
+        .our-agents .overlayer p{
+            font-size: .7rem;
+        } 
+        .our-agents .overlayer div span{
+            font-size:small;
+        } 
+        section.our-services .row::before {
+            content: "";
+            position: absolute;
+            left:10%;
+            top:50%;
+            background:var(--color5);
+            height:1px;
+            width:80%;
+            transform: translateY(-25px);
+        }
+}
+
+/* MD */
+@media screen and (max-width:991px)  {
+     /* Navbar */
+     div.navbar-collapse{
+        margin-top:1rem;
+        background:var(--orange1);
+        border-radius: .5rem;
+        position: absolute;
+        top:100%;
+        width:80%;
+        left:10%;
+        z-index: 1000;
+        padding-bottom: 20px;
+    }
+
+
+    div.navbar-collapse li {
+        margin:.2rem auto;
+        width:75%;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    div.navbar-collapse button{
+        width:100%;
+        margin-top:1rem;
+        font-size:1.2rem;
+    }
+
+    button.navbar-toggler{
+        outline:1px solid var(--white);
+    }
+    
+    .navbar ul li:not(.active):hover  a {
+        background:var(--white);
+        border:1px solid var(--dark);
+        color:var(--dark) !important;
+    }
+
+    .header li.nav-item:last-child{
+        width:90%;
+        margin-bottom: 0;
+    }
+
+
+    .header li.nav-item:last-child button{
+        border:1px solid var(--white) !important;
+    }
+
+    .header li.nav-item:last-child :hover{
+        background-color: var(--white);
+        width:75%;
+        transition:.4s all;
+    }
+
+    div.jumbotron a{
+        font-size:1rem;
+    }
+
+    /* customer reviews */
+    .custome-reviews ol.carousel-indicators {
+        left:28%;
+    }
+
+    /* footer */
+    footer .row .p2{
+        margin-bottom: 2rem;
+    }
+
+    /* our news */
+    .our-news .row div div{
+        margin-bottom: 10px;
+    }
+    .our-news .row div div:first-child{
+        margin-top: 10px;
+    }
+
+    .our-news .row div div div{
+        border-radius: 5px;
+    }
+
+    section.our-services .row::before {
+        content: "";
+        position: absolute;
+        left:10%;
+        top:50%;
+        background:var(--color5);
+        height:0px;
+        width:80%;
+        transform: translateY(-25px);
+    }
+
+}
+
+/* SM */
+@media screen and (max-width:767px)  {
+   
+    /* our properties */
+    .our-properties .card {
+        margin:0  2rem   2rem  2rem;
+    }
+
+    /* part2 */
+    div.part2 h3 {
+        font-size:2.5rem;
+    }
+
+    div.part2 span{
+        font-size:.8rem;
+    }
+
+    /* footer */
+    footer .row div{
+        margin-bottom: 2rem;
+    }
+
+    footer .row div:last-child{
+        margin-bottom: 0px;
+    }
+    
+    /* page service  */
+    /* services us */
+    section.our-services .row div{
+        border-bottom: 1px solid var(--color5);
+    }
+
+  
+
+    section.our-services div.p2,
+    section.our-services div.p5{
+    border-left:0;
+    border-right:0;
+
+} 
+
+
+}
+
+/* XS */
+@media screen and (max-width:575px)  {
+    .custome-reviews img{
+        width:50%;
+    }
+
+    .custome-reviews p.h4{
+        text-align: center;
+    }
+
+    .header{
+        height:80vh;
+    }
+
+    .jumbotron h1{
+        font-size: 3rem;
+        margin-top:20px;
+    }
+
+    
+
+           
+}

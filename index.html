@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Vicarage</title>
+</head>
+<body>
+
+<div class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark pt-4">
+        <div class="container">
+            <div class="navbar-brand text-uppercase font-weight-bold">
+                <span class="text-orange1">vicarage</span>
+            </div>
+            <button id="btn1" class="navbar-toggler" data-toggle="collapse" data-target="#navbar1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbar1">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item font-weight-bold pr-xl-4 pr-3  mb-2 active font-size-1">
+                        <a href="index.html" class="nav-link rounded text-white y-1 px-3 bg-white text-dark">Home</a>
+                    </li>
+                    <li class="nav-item font-weight-bold pr-xl-4 pr-3  mb-2 font-size-1">
+                        <a href="html/services.html" class="nav-link rounded text-white y-1 px-3">Services</a>
+                    </li>
+                     <li class="nav-item font-weight-bold pr-xl-4 pr-3  mb-2 font-size-1">
+                        <a href="html/about.html" class="nav-link rounded text-white y-1 px-3">About</a>
+                    </li>
+                    <li class="nav-item font-weight-bold pr-xl-4 pr-3  mb-2 font-size-1">
+                        <a href="html/gallery.html" class="nav-link rounded text-white y-1 px-3">Gallery</a>
+                    </li>
+                    <li class="nav-item font-weight-bold pr-xl-4 pr-3  mb-2 font-size-1">
+                        <a href="html/contact.html" class="nav-link rounded text-white y-1 px-3">Contact</a>
+                    </li>
+                    <li class="nav-item ml-3 "> 
+                        <button class="btn bg-orange1 text-white btn-light p-2 border-info font-weight-bold ml-lg-3" data-toggle="modal" data-target="#login" >Login</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="login">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header  justify-content-center">
+                    <h4 class="modal-title text-uppercase ">login</h4>
+                </div>
+                <div class="modal-body pb-0">
+                    <form action="" class=" form-group">
+                        <label for="name">User Name</label>
+                        <input type="text" id="name" class="form-control mb-3">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class="mb-4 form-control">
+                        <button class="btn btn-block bg-orange1 text-white mb-2">LOGIN</button>
+                        <div class="d-flex justify-content-between mb-3">
+                            <div class="pl-4"><input type="checkbox" name="remember" class="form-check-input" id="forget"><label for="forget" class="form-check-label">Remember me ?</label></div>
+                            <a href="#" class="text-dark">Forget password ?</a>
+                        </div>
+                    </form>
+                    <p class="text-center">Don't have an account?<span class="font-weight-bold"> Register Now</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+   <div class="container">
+    <div class="jumbotron pl-0 bg-transparent mb-5">
+        <h1 class="display-4 font-weight-bold text-white text-capitalize" >find a home to <br>suit your<br>lifestyle</h1>
+        <a class="btn bg-orange1 rounded-5 text-white btn-lg mt-4 w-25" href="#" role="button">View More</a>
+    </div>
+   </div>
+</div> 
+<main>
+    <section class="our-properties mb-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Our <span class="text-orange1 mt-5">Properties</span></h1>
+            <div class="row">
+                <div class="col-md border rounded card p-0">
+                    <img src="images/g1.jpg" alt="" class="card-img-top ">
+                    <div class="card-body">
+                        <h5 class="card-title text-orange1">
+                            Le Marche Etna House
+                        </h5>
+                        <p class="card-text text-justify">
+                            This is a longer card with supporting text below as a natural lead-in to additional content.
+                        </p>
+                        <button class="btn bg-orange1 text-uppercase btn-block text-white ">read more</button>
+                    </div>
+                </div>
+                <div class="col-md border rounded card mx-md-5 p-0">
+                    <img src="images/g2.jpg" alt="" class=" card-img-top ">
+                    <div class="card-body">
+                        <h5 class="card-title text-orange1">
+                            Renovated Family Home
+                        </h5>
+                        <p class="card-text text-justify">
+                            This is a longer card with supporting text below as a natural lead-in to additional content.
+                        </p>
+                        <button class="btn bg-orange1 text-uppercase btn-block text-white ">read more</button>
+                    </div>
+                </div>
+                <div class="col-md border rounded card p-0">
+                    <img src="images/g3.jpg" alt="" class="card-img-top ">
+                    <div class="card-body">
+                        <h5 class="card-title text-orange1">
+                            Southern Lake Villa
+                        </h5>
+                        <p class="card-text text-justify">
+                            This is a longer card with supporting text below as a natural lead-in to additional content.
+                        </p>
+                        <button class="btn bg-orange1 text-uppercase btn-block text-white ">read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <div class=" row align-content-center part2 py-5 bg-color1  w-100  m-0 mb-5 text-white">
+      <div class="container">
+        <div class="row text-center justify-content-center">
+            <div class="col-lg-8">
+                <p class="font-size-2">MAURIS ET JUSTO</p>
+                <h3 class="display-4 mb-4">Condimentum Interdum</h3>
+                <span class=" mb-5 d-block lead font-size-1 ">Aliquam ac est vel nisl condimentum interdum  eget enim. Curabitur mattis orci sed leo mattis, nec maximus nibh faucibus. Mauris et justo vel nibh rhoncus venenatis. Nullal condimentum interdum vel eget enim. Curabitur mattis orci sed le.</span>
+                <button class="btn bg-orange1 text-white rounded-5 py-3 px-5">View More</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <section class="custome-reviews mb-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Customer <span class="text-orange1"> Reviews</span></h1>
+            <div class="carousel slide" data-ride="carousel" id="slide1">
+                <ol class="carousel-indicators">
+                    <li class="active" data-target="#slide1" data-slide-to="0"></li>
+                    <li data-target="#slide1" data-slide-to="1"></li>
+                    <li data-target="#slide1" data-slide-to="2"></li>
+                    <li data-target="#slide1" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item  active">
+                        <div class="row justify-content-center ">
+                            <img src="images/t1.jpg" alt="" class="col-lg-2 mr-4 col-sm-4 img-fluid rounded-circle">
+                            <div class="col-lg-6 col-sm-7">
+                                <p class="pt-3 font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
+                                <p class="h4 font-weight-bold text-orange1">Garald Roy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="row justify-content-center ">
+                            <img src="images/t2.jpg" alt="" class="col-lg-2 mr-4 col-sm-4 img-fluid rounded-circle">
+                            <div class="col-lg-6 col-sm-7">
+                                <p class="pt-3 font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
+                                <p class="h4 font-weight-bold text-orange1">Garald Roy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="row justify-content-center ">
+                            <img src="images/t3.jpg" alt="" class="col-lg-2 mr-4 col-sm-4 img-fluid rounded-circle">
+                            <div class="col-lg-6 col-sm-7">
+                                <p class="pt-3 font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
+                                <p class="h4 font-weight-bold text-orange1">Garald Roy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="row justify-content-center ">
+                            <img src="images/t4.jpg" alt="" class="col-lg-2 mr-4 col-sm-4 img-fluid rounded-circle">
+                            <div class="col-lg-6 col-sm-7">
+                                <p class="pt-3 font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
+                                <p class="h4 font-weight-bold text-orange1">Garald Roy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <div class="newsletter  mb-5 ">
+        <div class="container py-5">
+            <h1 class="text-center pb-3 text-dark">Get <span class="text-white"> Notified</span></h1>
+            <p class=" pb-4 text-center">Aliquam ac est vel nisl condimentum interdum vel eget enim. Curabitur mattis orci sed leo mattis, nec maximus nibh faucibus. Mauris et justo vel nibh rhoncus venenatis. Nullal condimentum interdum vel eget enim. Curabitur mattis orci sed le.</p>
+            <form action="" class="d-flex justify-content-center pb-3">
+                <i class="bg-dark text-white btn-lg rounded-0 fa fa-envelope" aria-hidden="true"></i>
+                <input type="text" placeholder="Enter your email ..."  class="rounded-0 mr-1 pl-5 form-control">
+                <input type="submit" value="subscribe" class="btn btn-outline-dark text-uppercase "/>
+            </form>
+        </div>
+    </div>
+    <br><br>
+    <section class="our-news mb-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Our <span class="text-orange1"> News</span></h1>
+            <div class="row ">
+                <img src="images/g2.jpg" class="col-lg-7" alt="">
+                <div class="col-lg-5 d-flex flex-column  justify-content-around">
+                    <div class="d-flex">
+                        <div class="bg-orange1 col-2 text-white d-flex flex-column justify-content-center text-center">
+                            <h5 class="font-size-2">28</h5>
+                            <p class=" font-size-2 border-top m-0">Aug</p>
+                        </div>
+                        <div class="ml-3 pb-2">
+                            <h5>Homes as a Housing Option</h5>
+                            <span class="d-block"> <i class="text-orange1 mr-1 fa fa-map-marker fa-lg"></i> 5.00 pm - 7.30 pm</span>
+                            <span class="d-block"><i class="text-orange1 mr-1 fa fa-map-marker fa-lg"></i> 25 Newyork City.</span>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="bg-orange1 col-2 text-white  d-flex flex-column justify-content-center text-center">
+                            <h5 class="font-size-2">28</h5>
+                            <p class=" font-size-2 border-top m-0">Aug</p>
+                        </div>
+                        <div class="ml-3 pb-2">
+                            <h5>Tips for Buying a Home</h5>
+                            <span class="d-block"> <i class="text-orange1 mr-1 fa fa-map-marker fa-lg"></i> 5.00 pm - 7.30 pm</span>
+                            <span class="d-block"><i class="text-orange1 mr-1 fa fa-map-marker fa-lg"></i> 25 Newyork City.</span>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="bg-orange1 col-2 text-white  d-flex flex-column justify-content-center text-center">
+                            <h5 class="font-size-2">28</h5>
+                            <p class=" font-size-2 border-top m-0">Aug</p>
+                        </div>
+                        <div class="ml-3 pb-2">
+                            <h5>Home Seller’s To-Do Checklist</h5>
+                            <span class="d-block"> <i class="text-orange1 mr-1 fa fa-map-marker fa-lg"></i> 5.00 pm - 7.30 pm</span>
+                            <span class="d-block"><i class="text-orange1 mr-1 fa fa-map-marker fa-lg"></i> 25 Newyork City.</span>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="bg-orange1 col-2 text-white  d-flex flex-column justify-content-center text-center">
+                            <h5 class="font-size-2">28</h5>
+                            <p class=" font-size-2 border-top m-0">Aug</p>
+                        </div>
+                        <div class="ml-3 pb-2">
+                            <h5>Homes as a Housing Option</h5>
+                            <span class="d-block"> <i class="text-orange1 mr-1 fa fa-map-marker fa-lg"></i> 5.00 pm - 7.30 pm</span>
+                            <span class="d-block"><i class="text-orange1 mr-1 fa fa-map-marker fa-lg"></i> 25 Newyork City.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+</main>
+<footer>
+    <div class="container pb-5">
+        <div class="row py-5 px-2">
+            <div class="col-lg-3 col-sm-6  ">
+                <h5 class="h4 text-orange1 mb-3 ">About Us</h5>
+                <h2 class="text-orange1 mb-4">Real Estate</h2>
+                <p class="text-white ">Nulla quis lorem ut libermalesuada ultrices posuere cubilia feugiatrice praesent sapien massa</p>
+            </div>
+            <div class="col-lg-3 col-sm-6 p2 ">
+                <h5 class="h4 text-orange1 mb-4 ">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a class="text-white" href="#"><i class="mr-2 fa fa-angle-double-right text-orange1"></i> Home</a></li>
+                    <li class="mb-2"><a class="text-white" href="#"><i class="mr-2 fa fa-angle-double-right text-orange1"></i> About</a></li>
+                    <li class="mb-2"><a class="text-white" href="#"><i class="mr-2 fa fa-angle-double-right text-orange1"></i> Services</a></li>
+                    <li class="mb-2"><a class="text-white" href="#"><i class="mr-2 fa fa-angle-double-right text-orange1"></i> Gallery</a></li>
+                    <li class="mb-2"><a class="text-white" href="#"><i class="mr-2 fa fa-angle-double-right text-orange1"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6   ">
+                <h5 class="h4 text-orange1 mb-4">Working Hours</h5>
+                <ul class="list-unstyled text-white">
+                    <li class="mb-2">
+                        Monday - Friday<br><span>9.00 - 20.00</span>
+                    </li>
+                    <li class="mb-2">
+                        Saturday<br><span>10.00 - 16.00</span>
+                    </li>
+                    <li class="mb-2">
+                        Sunday<br><span>9.30 - 18.00</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6  ">
+                <h5 class="h4 text-orange1 mb-4">Address</h5>
+                <div class="text-white">
+                    <div class="mb-4">
+                        <span class="text-orange1  fa-lg fa fa-envelope-open"></span>
+                        <a href="#" class="text-white ml-3">info@example.com</a>
+                    </div>
+                    <div class="mb-4">
+                        <span class="text-orange1  fa-lg fa fa-phone"></span>
+                        <a href="#" class="text-white ml-3">+456 123 7890</a>
+                    </div>
+                    <div class="mb-4">
+                        <span class="text-orange1  fa-lg fa fa-home"></span>
+                        <a href="#" class="text-white ml-3">+90 nsequursu desdc</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+      <p class="text-white text-center m-0">  © 2018 Vicarage. All rights reserved | Design by <span class="text-orange1"> W3layouts.</span></p>
+    </div>
+</footer>
+
+
+<!-- -------------------------------------------------------------------------------- -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+crossorigin="anonymous"></script>
+<script>
+    $('.carousel').carousel({
+      interval: 3000,
+      keyboard: true,
+      pause: 'hover',
+      wrap: true
+    });
+
+    $('#slider4').on('slide.bs.carousel', function () {
+      console.log('SLIDE!');
+    });
+
+    $('#slider4').on('slid.bs.carousel', function () {
+      console.log('SLID!');
+    });
+
+</script>
+<script>
+// Init tooltips
+$('[data-toggle="tooltip"]').tooltip();
+
+function showTooltip() {
+  $('#h11').tooltip('show');
+}
+
+function hideTooltip() {
+  $('#h11').tooltip('hide');
+}
+
+function toggleTooltip() {
+  $('#h11').tooltip('toggle');
+}
+
+// Tooltip Events
+$('#hello').on('show.bs.tooltip', function () {
+  console.log('Tooltip Show');
+});
+
+$('#hello').on('shown.bs.tooltip', function () {
+  console.log('Tooltip Shown');
+});
+
+$('#hello').on('hide.bs.tooltip', function () {
+  console.log('Tooltip Hide');
+});
+
+$('#hello').on('hidden.bs.tooltip', function () {
+  console.log('Tooltip Hidden');
+});
+</script>
+<script>
+    // Init Popover
+    $('[data-toggle="popover"]').popover();
+
+    function showPopover() {
+      $('#hello').popover('show');
+    }
+
+    function hidePopover() {
+      $('#hello').popover('hide');
+    }
+
+    function togglePopover() {
+      $('#hello').popover('toggle');
+    }
+
+    // Popover events
+    $('#hello').on('show.bs.popover', function () {
+      console.log('Popover show');
+    });
+
+    $('#hello').on('shown.bs.popover', function () {
+      console.log('Popover shown');
+    });
+
+    $('#hello').on('hide.bs.popover', function () {
+      console.log('Popover hide');
+    });
+
+    $('#hello').on('hidden.bs.popover', function () {
+      console.log('Popover hidden');
+    });
+</script>
+    <script>
+    $('body').scrollspy({ target: '#main-nav' });
+
+    // Add smooth scrolling
+    $('#main-nav a').on('click', function (e) {
+      // Check for a hash value
+      if (this.hash !== '') {
+        // Prevent default behavior
+        e.preventDefault();
+
+        // Store hash
+        const hash = this.hash;
+
+        // Animate smooth scroll
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function () {
+          // Add hash to URL after scroll
+          window.location.hash = hash;
+        });
+      }
+    });
+</script>
+</body>
+</html>
