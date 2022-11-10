@@ -463,6 +463,12 @@ section.about-us p{
     }
 
     
+    div.jumbotron a{
+        font-size:0.7rem;
+        width:90px;
+    }
+
+    
 
            
 }
